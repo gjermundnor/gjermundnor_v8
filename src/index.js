@@ -10,13 +10,13 @@ import Skills from './components/Skills';
 import { Router, Route, Link, IndexRoute, browserHistory } from 'react-router';
 
 // Import CSS
-require("!style!css!sass!./sass/style.scss");
+require("./global.scss");
 
 const router = (
     <Router history={browserHistory}>
       <Route path="/" component={Global}>
         <IndexRoute component={Home}></IndexRoute>
-        <Route path="page" component={Skills}></Route>
+        <Route path="skills" component={Skills}></Route>
       </Route>
     </Router>
 );
