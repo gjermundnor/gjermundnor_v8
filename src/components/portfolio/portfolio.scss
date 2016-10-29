@@ -1,0 +1,13 @@
+@import '../../global.scss';
+
+.portfolio{
+  max-width: 2000px;
+  margin: auto;
+  .portfolio-single{
+    padding: 5px;
+    .portfolio-image{
+      opacity: 0;
+      position: relative;
+    } // END image
+  } // END single
+} // END portfolio
