@@ -2,9 +2,20 @@
 
 .nav-wrapper{
   background-color: $mainColor;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   nav{ // Container
     .nav-left{
       float: left;
+      .logo{
+        padding: 16px;
+        padding-left: 0px;
+        font-size: 20px;
+        color: $lightFont;
+        display: inline-block;
+      }
     }
     .nav-right{
       float: right;
@@ -15,15 +26,39 @@
           list-style: none;
           display: inline-block;
           margin: 10px;
+          position: relative;
           a{
             color: $lightFont;
             display: inline-block;
             padding: 10px;
+            &:after{
+              content: '';
+              position: absolute;
+              bottom: -15px;
+              left: 0;
+              right: 0;
+              margin: auto;
+              width: 0px;
+              height: 0px;
+              border-radius: 50%;
+              background-color: $lightFont;
+              transition: all linear 200ms;
+            }
             &.active-link{
-              color: red;
+              &:after{
+                width: 10px;
+                height: 10px;
+                transition: all linear 200ms;
+              }
             }
             &:hover, &:focus{
-
+              text-decoration: none;
+              &:after{
+                width: 10px;
+                height: 10px;
+                bottom: -5px;
+                transition: all linear 200ms;
+              }
             }
           } // END a
         } // END li

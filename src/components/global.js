@@ -5,7 +5,7 @@ import Menu from './menu/menu';
 export default class Global extends React.Component {
   render(){
     return(
-      <div>
+      <div id="mainContent">
         <Menu />
         { React.cloneElement(this.props.children, this.props)}
       </div>
