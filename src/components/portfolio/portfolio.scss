@@ -1,8 +1,12 @@
-@import '../../global.scss';
+@import '../../variables.scss';
 
 .portfolio{
   max-width: 2000px;
   margin: auto;
+  text-align: center;
+  padding: 50px 0;
+  overflow: auto;
+  overflow-x: hidden;
   .portfolio-single{
     padding: 5px;
     .portfolio-image{

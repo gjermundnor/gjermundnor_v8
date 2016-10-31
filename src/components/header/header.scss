@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+
+#headerArea{
+  border-bottom: 2px solid $mainColor;
+  background-color: #FFF;
+  height: 70%;
+  min-height: 500px;
+  position: relative;
+  #articleBox{
+    position: absolute;
+    opacity: 0;
+    top: -30%;
+    transform: translateY(-50%);
+    background-color: $mainColor;
+    color: $lightFont;
+    display: inline-block;
+    left: 10%;
+    max-width: 600px;
+    padding: 50px;
+    h1{
+      margin: 0;
+    }
+    #boxOverlay1{
+      position: absolute;
+      top: auto;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 160%;
+      background-color: $secondColor;
+    }
+  }
+  #backgroundFill{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    background-color: $mainColor;
+  }
+}

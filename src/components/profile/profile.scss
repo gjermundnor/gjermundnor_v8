@@ -1,0 +1,23 @@
+@import './../../variables.scss';
+
+#profile{
+	background-color: #1b1b1b;
+    padding: 30px 0;
+	.profile-img-wrapper{
+		overflow: hidden;
+		position: relative;
+		max-width: 800px;
+		margin: auto;
+	    .dynamic-img{
+
+	    }
+	    #dynamicBg{
+			position: relative;
+	    }
+	    #dynamicProfile{
+			position: absolute;
+			top: 15px;
+			left: 0;
+	    }
+	 } // END dynamic image wrapper
+}

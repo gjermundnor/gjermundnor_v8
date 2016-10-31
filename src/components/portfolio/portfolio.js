@@ -2,8 +2,8 @@ import React from 'react';
 import GSAP from 'gsap';
 import ScrollMagic from 'scrollmagic';
 import Loop from './loop';
-//import 'script!scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js';
 import 'imports?define=>false!scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap';
+require("./portfolio.scss");
 
 const portfolios = [
   {
@@ -50,13 +50,9 @@ export default class Portfolio extends React.Component {
   render(){
     return(
       <section className="portfolio">
-        <center>
-        <div style={{height: 1000}} ></div>
-          <h1 id="portfolio">Portfolio</h1>
-          <p>Six selected topics from different envirements I have worked on the past three years.</p>
-          </center>
+        <h1 id="portfolio">Portfolio</h1>
+        <p>Six selected topics from different envirements I have worked on the past three years.</p>
         <Loop portfolio={portfolios} />
-        <div style={{height: 1000}} ></div>
       </section>
     );
   }

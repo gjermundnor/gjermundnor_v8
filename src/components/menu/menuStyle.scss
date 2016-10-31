@@ -1,4 +1,4 @@
-@import '../../global.scss';
+@import '../../variables.scss';
 
 .nav-wrapper{
   background-color: $mainColor;
@@ -7,6 +7,8 @@
   top: 0;
   left: 0;
   right: 0;
+  border-bottom: 1px solid darken($mainColor, 3%);
+  overflow: hidden;
   nav{ // Container
     .nav-left{
       float: left;

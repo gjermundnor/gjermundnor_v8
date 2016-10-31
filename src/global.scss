@@ -1,11 +1,22 @@
-// Color pallett
-$mainColor: #086788;
-$darkFont: #333;
-$lightFont: #f6f6f6;
+@import 'variables.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700');
 
 body{
   margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 2em;
+  line-height: 125%;
+  overflow-x: hidden;
   #mainContent{
     padding-top: 60px;
   }
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 700;
+  line-height: 125%;
+}
+.img-res{
+  width: auto;
+  max-width: 100%;
 }
